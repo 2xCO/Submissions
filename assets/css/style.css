@@ -7,10 +7,18 @@ body{
 	font-family: "CompagnonLight";
 }
 
-.container{
-
+.ergebniss{
+	height: 10vh;
+	display: none;
 }
 
-.item{
-	
+.Versuch{
+	display: flex;
+	height: 10vh;
+	z-index: 1;
+	justify-content: center;
+}
+
+.Aufgabeversuch{
+	display: flex;
 }
