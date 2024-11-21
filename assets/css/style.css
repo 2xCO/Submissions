@@ -5,20 +5,75 @@
 
 body{
 	font-family: "CompagnonLight";
+	background-color: brown;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
 }
 
 .ergebniss{
-	height: 10vh;
-	display: none;
+	height: 20vh;
 }
+
+h1{
+	font-size: large;
+	color: beige;
+}
+
+@keyframes in{
+	from {justify-content: space-evenly;}
+	to {justify-content: space-between;}
+  }
+
+@keyframes out{
+	from {justify-content: space-between;}
+	to {justify-content: space-evenly;}
+  }
+
+.Aufgabe_1,.Aufgabe_2,.Aufgabe_3,.Aufgabe_4{
+	display: flex;
+	padding: 2vh;
+	color: brown;
+	animation-name: out;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+} 
+  
+.Aufgabe_1:hover,
+.Aufgabe_2:hover,
+.Aufgabe_3:hover,
+.Aufgabe_4:hover
+{
+	display: flex;
+	animation-name: in;
+    animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+.Aufgabe_1:hover h1{
+	align-self: 
+}
+
+/* .Aufgabeversuch{ 
+	display: flex;
+	animation-name: out;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+.Aufgabeversuch:hover{
+	display: flex;
+	animation-name: in;
+    animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}*/
+
 
 .Versuch{
-	display: flex;
 	height: 10vh;
 	z-index: 1;
-	justify-content: center;
+	display: none;
 }
-
-.Aufgabeversuch{
-	display: flex;
-}
+ 
